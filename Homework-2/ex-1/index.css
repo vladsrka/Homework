@@ -1,0 +1,12 @@
+.img{
+    text-align: center;
+}
+.poem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
