@@ -12,8 +12,14 @@ h1{
 #r{
     color: red;
 }
-#all-text{
-    font-size: 80%;
+#wp1{
+    width: 80%;
+}
+#wp2{
+    width: 80%;
+}
+#wp3{
+    width: 80%;
 }
 #line{
     text-decoration: underline;
