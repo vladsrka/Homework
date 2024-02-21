@@ -16,3 +16,10 @@ p{
     width: 145px;
     height: 195px;
 }
+#b4{
+    background-image: url('images/cards2.png');
+    background-repeat: no-repeat;
+    background-position:-285px -385px ;
+    width: 145px;
+    height: 195px;
+}
