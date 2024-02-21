@@ -1,0 +1,18 @@
+p{
+    white-space: pre-line;
+    text-align: left;
+}
+#b3{
+    background-image: url('images/cards2.png');
+    background-repeat: no-repeat;
+    background-position:-285px -190px ;
+    width: 145px;
+    height: 195px;
+}
+#k8{
+    background-image: url('images/cards2.png');
+    background-repeat: no-repeat;
+    background-position:-142px -1161px ;
+    width: 145px;
+    height: 195px;
+}
