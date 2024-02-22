@@ -3,14 +3,19 @@ body{
     padding: 0;
 }
 .borders{
-    background-image: url('images/left.png'), url('images/right.png'), url('images/top.png'), url('images/bottom.png'); 
-    background-position: left center, right center, center top, center bottom;
-    background-repeat: repeat-y, repeat-y, repeat-x, repeat-x;
+    background: 
+        url('images/left.png') repeat-y left center, 
+        url('images/right.png') repeat-y right center, 
+        url('images/top.png') repeat-x center top, 
+        url('images/bottom.png') repeat-x center bottom; 
+    
 }
 .corner{
-    background-image: url('images/left-top.png'), url('images/right-top.png'), url('images/right-bottom.png'), url('images/left-bottom.png');
-    background-position: left top, right top, right bottom, left bottom;
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background: 
+    url('images/left-top.png') no-repeat left top, 
+    url('images/right-top.png') no-repeat right top,  
+    url('images/right-bottom.png') no-repeat right bottom, 
+    url('images/left-bottom.png') no-repeat left bottom;
     padding: 42px;
     padding-left: 50px;
     padding-right: 50px;
