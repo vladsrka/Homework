@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.borders{
+    background: 
+        url('images/left.png') repeat-y left center, 
+        url('images/right.png') repeat-y right center, 
+        url('images/top.png') repeat-x center top, 
+        url('images/bottom.png') repeat-x center bottom; 
+    
+}
+.corner{
+    background: 
+    url('images/left-top.png') no-repeat left top, 
+    url('images/right-top.png') no-repeat right top,  
+    url('images/right-bottom.png') no-repeat right bottom, 
+    url('images/left-bottom.png') no-repeat left bottom;
+    padding: 42px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
