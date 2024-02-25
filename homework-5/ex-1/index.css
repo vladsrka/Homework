@@ -1,0 +1,43 @@
+h1{
+    text-align: center;
+}
+#potter-all{
+    text-align: center;
+}
+#link{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+#r{
+    color: red;
+}
+#line{
+    text-decoration: underline;
+}
+#fat{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+#rl{
+    color: red;
+}
+@font-face {
+    font-family: 'Caveat';
+    font-weight: 700;
+    src: url(./fonts/Caveat/static/Caveat-Bold.ttf);
+}
+#font1{
+    font-family: Caveat;
+    font-size: 21px;
+}
+@font-face {
+    font-family: 'Pacifico';
+    font-weight: 400;
+    src: url(./fonts/Pacifico/Pacifico-Regular.ttf);
+}
+#font2{
+    font-family: Pacifico;
+    font-size: 21px;
+    width: 80%;
+}
