@@ -1,3 +1,10 @@
+body{
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+}
+
+
 @font-face {
     font-family: 'Caveat';
     font-weight: 700;
@@ -9,20 +16,23 @@
     src: url(./fonts/Pacifico/Pacifico-Regular.ttf);
 }
 
-body{
-    background-color: antiquewhite;
-}
 
 
 .font1{
+    background-color: aquamarine;
     font-family: Caveat;
     font-size: 21px;
 }
 h1{
     text-align: center;
+    margin-top: 0;
 }
 .potter-all{
     text-align: center;
+}
+.paragraph-hed{
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .line{
     text-decoration: underline;
@@ -45,6 +55,7 @@ aside{
     width: 200px;
     float: left;
     font-size: 15px;
+    margin-left: 5px;
 }
 h2{
     text-transform: uppercase;
@@ -57,7 +68,7 @@ h2{
 .dimg{
     display: flex;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     overflow: hidden;
 }
 .text{
@@ -69,6 +80,7 @@ main{
     font-family: Pacifico;
     font-size: 16px;
     margin-left: 200px;
+    margin-right: 5px;
 }
 .r{
     color: red;
