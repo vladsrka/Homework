@@ -9,6 +9,12 @@
     src: url(./fonts/Pacifico/Pacifico-Regular.ttf);
 }
 
+body{
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+}
+
 
 .font1{
     font-family: Caveat;
@@ -88,5 +94,6 @@ main{
 .p3{
     background-color: rgba(113, 107, 99, 0.487);
 }
+
 
 
