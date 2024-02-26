@@ -4,7 +4,6 @@ body{
     padding: 0;
 }
 
-
 @font-face {
     font-family: 'Caveat';
     font-weight: 700;
@@ -15,8 +14,6 @@ body{
     font-weight: 400;
     src: url(./fonts/Pacifico/Pacifico-Regular.ttf);
 }
-
-
 
 .font1{
     background-color: aquamarine;
@@ -50,7 +47,6 @@ h1{
     color: red;
 }
 
-
 aside{
     width: 200px;
     float: left;
@@ -74,7 +70,6 @@ h2{
 .text{
     margin: 0;
 }
-
 
 main{
     font-family: Pacifico;
