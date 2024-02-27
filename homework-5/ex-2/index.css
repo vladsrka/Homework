@@ -2,6 +2,7 @@ html, body{
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: rgb(243, 243, 151);
 }
 @font-face {
     font-family: 'Pacifico';
@@ -29,7 +30,7 @@ aside{
     background-color: rgb(243, 243, 151);
     width: 200px;
     min-width: 192px; 
-    
+    overflow: visible;
     min-height: calc(100% - 112px);
     margin: 0;
     padding: 0;
