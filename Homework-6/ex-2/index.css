@@ -23,3 +23,48 @@ tr:last-child:nth-child(even) td{
     height: 20px;
     background-color: rgb(131, 232, 144);
 }
+
+
+.title{
+    color: black;
+    font-size: 35px;
+    margin-top: 20px;
+}
+.date{
+    color: green;
+    font-size: 20px;
+
+}
+.year{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+.info{
+    color: blue;
+    font-style: italic;
+    font-size: 20px;
+}
+.link2{
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.link2:hover{
+    text-decoration: underline;
+}
+a:active{
+    color: red;
+    font-style: italic;
+}
+p, a{
+    margin: 0;
+}
+.p1::before, .p2::before,.p3::before{
+    content: url(./images/extref.png);
+}
+.a1, .a2, .a3{
+    padding-left: 10px;
+    background: url(./images/extref.png) no-repeat left;
+}
