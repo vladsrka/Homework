@@ -1,0 +1,21 @@
+.first-line a{
+    color: green;
+    border-right: solid 3px red;
+    padding-right: 3px;
+}
+.first-line a:hover{
+    color: red;
+}
+
+
+.second-line table td{
+    border-right: solid 3px red ;
+    padding-right: 3px;
+}
+.second-line a{
+    color: green;
+}
+.second-line a:hover{
+    color: red;
+}
+
