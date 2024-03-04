@@ -1,0 +1,10 @@
+.rating{
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: left;
+}
+
+.str:hover:nth-child(n),
+.str:hover ~ :nth-child(n+1){
+    content: url("./images/star1.png");
+}
