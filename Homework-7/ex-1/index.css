@@ -156,4 +156,8 @@ footer{
       text-align: center;
       float: none;
     }
+    .imgp {
+        float: none;
+        min-width: 100px;
+    }
   }
