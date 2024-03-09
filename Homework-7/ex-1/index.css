@@ -24,8 +24,10 @@ h1{
 }
 .potter-all{
     text-align: center;
+    max-width:100%;
+         height:auto;
 }
-.paragraph-hed{
+.paragraph-foot{
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -46,7 +48,9 @@ h1{
 }
 
 aside{
-    width: 200px;
+    min-width: 100px;
+    max-width: 15%;
+    /* width: 200px; */
     float: left;
     font-size: 15px;
     margin-left: 5px;
