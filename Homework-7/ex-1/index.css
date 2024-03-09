@@ -119,17 +119,34 @@ footer{
 
 @media screen and (max-width: 750px) {
     h1 {font-size: 32px;}
+    h2{font-size: 18px;}
     .font1 {font-size: 18px;}
     .sidebar {
       width: 100%;
       height: auto;
       /* position: relative; */
     }
+    ol {
+        display: inline-block;
+    }
+    .sidebar a{font-size: 13px;}
     .sidebar li {
         float: left;
         margin-left: 20px;
     }
-    main {margin-left: 0;}
+    .popular-heroes{text-align: center;}
+    .dimg {
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+        width: 80px;
+        float: none;
+    }
+    main, .paragraph-foot {
+        margin-left: 0;
+        font-size: 14px;
+    }
+   
   }
   
   @media screen and (max-width: 500px) {
