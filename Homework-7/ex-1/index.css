@@ -1,0 +1,227 @@
+body {
+    background-color: antiquewhite; 
+}
+
+@font-face {
+    font-family: 'Caveat';
+    font-weight: 700;
+    src: url(./fonts/Caveat/static/Caveat-Bold.ttf);
+}
+@font-face {
+    font-family: 'Pacifico';
+    font-weight: 400;
+    src: url(./fonts/Pacifico/Pacifico-Regular.ttf);
+}
+
+header {
+    font-family: Caveat;
+    margin: 10px;
+    clear: both; 
+    position: static;  
+    font-size: 21px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.potter-all {
+    text-align: center;
+}
+.potter-all-img {
+    min-width: 120px;
+}
+
+.line {
+    text-decoration: underline;
+}
+.fat {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+.rl {
+    color: red;
+}
+
+
+.sidebar {
+    width: 200px;
+    font-size: 15px;
+    overflow: visible;
+    min-height: calc(100% - 112px);
+    margin-left: 5px;
+    padding: 0;
+    float: left;
+    display: table-cell;
+    box-sizing: border-box;
+    position: sticky;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+li:hover {
+    background-color: #8f8f8f;
+}
+li:hover a {
+    color: white;
+}
+li:active {
+    background-color: rgb(161, 255, 224);
+    
+}
+
+.dimg {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.img-sidbar {
+    float: left;
+    margin-right: 5px;
+}
+
+.text {
+    margin: 0;
+}
+
+
+main {
+    font-family: Pacifico;
+    font-size: 16px;
+    min-height: calc(100% - 112px);
+    margin-left: 200px;
+    margin-right: 5px;
+    box-sizing: border-box;
+    position: relative;
+    display: table-cell;
+}
+
+.r {
+    color: red;
+}
+
+.paragraph {
+    padding: 10px;
+    min-height: auto;
+    margin: 30px;
+    overflow: hidden;
+}
+.imgp {
+    float: left;
+    margin-right: 10px;
+}
+
+.p1 {
+    background-color: rgba(222, 184, 135, 0.487);
+}
+.p2 {
+    background-color: rgba(224, 71, 104, 0.487);
+}
+.p3 {
+    background-color: rgba(113, 107, 99, 0.487);
+}
+
+
+footer {
+    margin: 10px;
+    clear: both;
+    box-sizing: border-box;
+    bottom: 0;
+    position:static;
+}
+
+.paragraph-foot {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Tablet */
+@media screen and (max-width: 770px) {
+    h1 {font-size: 32px;}
+    h2 {font-size: 18px;}
+    .font1 {font-size: 18px;}
+    .sidebar {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        float: none;
+        display: table-footer-group;
+    }
+    .sidebar a {font-size: 13px;}
+    .sidebar li {
+        text-align: left;
+        margin-left: 0;
+    }
+    ol {
+        margin: 0;
+        display: inline-block;
+    }
+    .popular-heroes {text-align: center;}
+    .img-sidbar {
+        float: none;
+        margin-right: 0px;
+    }
+    .dimg {
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+        width: 80px;
+        float: none;
+    }
+    .paragraph {
+        margin: 10px;
+    }
+    #lp1, #lp2, #lp3 {
+        margin-top: 0;
+    }
+    main, .paragraph-foot {
+        margin-left: 0;
+        font-size: 14px;
+    }
+  }
+  
+/* Mobil */
+  @media screen and (max-width: 450px) {
+    h1 {font-size: 24px;}
+    h2 {font-size: 16px;}
+    .font1 {font-size: 16px;}
+    .sidebar {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        float:none;
+        display: table-footer-group;
+    }
+    .sidebar a {font-size: 12px;}
+    .sidebar li {
+        float: none;
+        margin-left: 0;
+    }
+    ol{
+        margin: 0;
+        padding-left: 20px;
+        text-align: left;
+    }
+    .imgp {
+        float: none;
+        min-width: 100px;
+    }
+    .paragraph-img {
+        text-align: center;
+    }
+    .paragraph {
+        margin: 10px;
+    }
+
+  }
