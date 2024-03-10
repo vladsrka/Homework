@@ -144,23 +144,25 @@ footer {
     margin-right: 5px;
 }
 
-
-@media screen and (max-width: 750px) {
+/* Tablet */
+@media screen and (max-width: 770px) {
     h1 {font-size: 32px;}
     h2 {font-size: 18px;}
     .font1 {font-size: 18px;}
     .sidebar {
-      width: 100%;
-      height: auto;
-      /* position: relative; */
-    }
-    ol {
-        display: inline-block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        float: none;
     }
     .sidebar a {font-size: 13px;}
     .sidebar li {
-        float: left;
-        margin-left: 20px;
+        text-align: left;
+        margin-left: 0;
+    }
+    ol {
+        margin: 0;
+        display: inline-block;
     }
     .popular-heroes {text-align: center;}
     .img-sidbar {
@@ -174,23 +176,32 @@ footer {
         width: 80px;
         float: none;
     }
+    .paragraph {
+        margin: 10px;
+    }
+    #lp1, #lp2, #lp3 {
+        margin-top: 0;
+    }
     main, .paragraph-foot {
         margin-left: 0;
         font-size: 14px;
     }
-   
   }
   
-  @media screen and (max-width: 500px) {
+/* Mobil */
+  @media screen and (max-width: 450px) {
     h1 {font-size: 24px;}
     h2 {font-size: 16px;}
     .font1 {font-size: 16px;}
     .sidebar {
-      text-align: center;
-      float: none;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        float: none;
     }
     .sidebar a {font-size: 12px;}
     .sidebar li {
+        float: none;
         margin-left: 0;
     }
     ol{
@@ -208,4 +219,5 @@ footer {
     .paragraph {
         margin: 10px;
     }
+
   }
