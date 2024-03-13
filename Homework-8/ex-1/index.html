@@ -16,18 +16,42 @@
             <p class="title">
                 Для публикации вашей статьи заполните, пожалуйста, следующую форму:
             </p>
-            <label class="article-title">
+            <div>
                 Название статьи:
-                <input type="text">
-            </label>
-            <label class="heading">
+                <input class="article-title" type="text">
+            </div>
+            <div>
                 Рубрика:
-                <select name="heading">
+                <select class="heading" name="list">
                     <option value="1" selected>программирование</option>
                     <option value="2">спорт</option>
                     <option value="3">наука</option>
                 </select>
-            </label>
+            </div>
+            <div>
+                Публикация:
+                <label>
+                    <input type="radio">
+                    на сайте
+                </label>
+                <label>
+                    <input type="radio">
+                    в журнале
+                </label>
+                <label>
+                    <input type="radio">
+                    на сайте и в журнале
+                </label>
+            </div>
+            <div>
+                Разрешить коментарии:
+                <input type="checkbox">
+            </div>
+            <div>
+                Текст статьи:
+                <textarea name="text" placeholder="Печатать тут."></textarea>
+                <input type="submit" value="Опубликовать">
+            </div>
         </form>
     </section>
 </body>
