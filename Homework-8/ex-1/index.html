@@ -12,11 +12,22 @@
 
 <body>
     <section class="container">
-        <p>
-            Для публикации вашей статьи заполните, пожалуйста, следующую форму:
-        </p>
-        <form action="">
-
+        <form method="post" action="https://fe.it-academy.by/TestForm.php">
+            <p class="title">
+                Для публикации вашей статьи заполните, пожалуйста, следующую форму:
+            </p>
+            <label class="article-title">
+                Название статьи:
+                <input type="text">
+            </label>
+            <label class="heading">
+                Рубрика:
+                <select name="heading">
+                    <option value="1" selected>программирование</option>
+                    <option value="2">спорт</option>
+                    <option value="3">наука</option>
+                </select>
+            </label>
         </form>
     </section>
 </body>
