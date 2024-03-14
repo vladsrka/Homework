@@ -2,26 +2,44 @@
     margin: 0px 10px 0px 10px;
     font-size: 18px;
     overflow: hidden;
-    display: inline-block;
 }
 .leveling-blok {
+    width: 100%;
+}
+.leveling-blok * {
+    display: block;
+}
+.leveling-blok *{
+    margin: 2px 0px 2px 0px;
+}
+#article-title {
+    width: 98%;
+    border: solid grey 1px;
+}
+#heading {
+    width: 99%;
+    padding: 1px 2px 1px 2px;
+    border: solid grey 1px;
+}
+#input-radio1, #input-radio2, #input-radio3, #label-checkbox {
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+#label-textarea {
+    width: 98%;
+    border: solid grey 1px;
+}
+br {
+    display: none;
+}
 
-}
-.label-blok {
-    display: inline-block;
-}
-.input-blok {
-    display: inline-block;
-    vertical-align: top;
-}
-.label-blok label {
-    display: block;
-    margin: 4px 0px 4px 0px;
-}
-.input-blok * {
-    display: block;
-    margin: 4px 0px 4px 0px;
-}
-.input-blok #publication * {
-    display: inline-block;
+@media screen and (min-width: 768px) {
+    .leveling-blok label {
+        display: inline-block;
+    }
+    #article-title, #heading, #publication {
+        display: inline-block;
+        width: 77%;
+    
+    }
 }
