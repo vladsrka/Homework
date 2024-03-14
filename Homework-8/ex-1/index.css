@@ -1,0 +1,24 @@
+.container{
+    
+    margin: 0px 10px 0px 10px;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+div{
+    margin: 3px 0px 3px 0px;
+}
+.sec1{
+    width: 100%;
+}
+.name{
+    margin: 0;
+    display: inline-block;
+}
+.article-title{
+    display: inline-block;
+    width: calc(98% - 195px);
+}
+.sec2{
+   
+}
