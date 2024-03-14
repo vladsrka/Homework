@@ -2,28 +2,26 @@
     margin: 0px 10px 0px 10px;
     font-size: 18px;
     overflow: hidden;
+    display: inline-block;
 }
-div {
+.leveling-blok {
+
+}
+.label-blok {
+    display: inline-block;
+}
+.input-blok {
+    display: inline-block;
+    vertical-align: top;
+}
+.label-blok label {
+    display: block;
     margin: 4px 0px 4px 0px;
 }
-.sec1 {
+.input-blok * {
+    display: block;
+    margin: 4px 0px 4px 0px;
+}
+.input-blok #publication * {
     display: inline-block;
-    width: 100%;
-    box-sizing: border-box;
-}
-.name {
-    display: inline-block;
-    margin: 0;
-}
-.article-title {
-    display: inline-block;
-    float: right;
-    width: 87%;
-}
-.sec2 {
-   clear: both;
-}
-.heading{
-    float: right;
-    margin-right: 77%;
 }
