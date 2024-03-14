@@ -1,0 +1,27 @@
+.container {
+    margin: 0px 10px 0px 10px;
+    font-size: 18px;
+    overflow: hidden;
+    display: inline-block;
+}
+.leveling-blok {
+
+}
+.label-blok {
+    display: inline-block;
+}
+.input-blok {
+    display: inline-block;
+    vertical-align: top;
+}
+.label-blok label {
+    display: block;
+    margin: 4px 0px 4px 0px;
+}
+.input-blok * {
+    display: block;
+    margin: 4px 0px 4px 0px;
+}
+.input-blok #publication * {
+    display: inline-block;
+}
