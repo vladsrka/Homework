@@ -46,13 +46,13 @@
 
 @media screen and (min-width: 593px) {
     #at {
-        width: calc(100% - 221px);
+        width: calc(100% - 218px);
     }
     #hg {
         width: 230px;
     }
     #label-textarea {
-        width: 99%;
+        width: calc(100% - 8px);
     }
     #pubon, #pubon label {
         display: inline-block;
