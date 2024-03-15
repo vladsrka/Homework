@@ -46,7 +46,7 @@
 
 @media screen and (min-width: 593px) {
     #at {
-        width: 60%;
+        width: calc(100% - 221px);
     }
     #hg {
         width: 230px;
@@ -59,14 +59,13 @@
     }
     .article-title, .heading, 
     .publication, .label-checkbox {
-        clear: both; 
-        text-align: right;
-        line-height: 25px;
+        line-height: 26px;
     }
-    .article-title label:first-of-type, .heading label:first-of-type, 
-    .publication label:first-of-type, .label-checkbox label:first-of-type {
-        float: left;
-        padding-right: 15px;
+    .article-title > label, .heading > label, 
+    .publication > label, .label-checkbox > label {
+        display: inline-block;
+        width: 197px;
+        padding-right: 10px;
     }
     .leveling-blok {
         width: 100%;

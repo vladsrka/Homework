@@ -11,57 +11,71 @@
 </head>
 
 <body>
-    <section class="container">
-        <p class="title">
-            Для публикации вашей статьи заполните, пожалуйста, следующую форму:
-        </p>
-        <div class="leveling-blok">
-            <label for="article-title">
-                Название статьи:
-            </label>
-            <input id="article-title" type="text">
+    <form method="post" action="https://fe.it-academy.by/TestForm.php">
+        <section class="container1">
+            <p class="title">
+                Для публикации вашей статьи заполните, пожалуйста, следующую форму:
+            </p>
+            <section class="container2">
+                <div class="leveling-blok">
 
-            <label for="heading">
-                Рубрика:
-            </label>
-            <select id="heading" name="list">
-                <option value="1" selected>программирование</option>
-                <option value="2">спорт</option>
-                <option value="3">наука</option>
-            </select>
+                    <div class="article-title">
+                        <label for="at">
+                            Название статьи:
+                        </label>
+                        <input id="at" type="text">
+                    </div>
 
-            <label for="publication">
-                Публикация:
-            </label>
-            <div id="publication">
-                <label for="input-radio1">
-                    <input id="input-radio1" name="pub" type="radio" value="4">
-                    на сайте
-                </label>
-                <label for="input-radio2">
-                    <input id="input-radio2" name="pub" type="radio" value="5">
-                    в журнале
-                </label>
-                <label for="input-radio3">
-                    <input id="input-radio3" name="pub" type="radio" value="6">
-                    на сайте и в журнале
-                </label>
-            </div>
+                    <div class="heading">
+                        <label for="hg">
+                            Рубрика:
+                        </label>
+                        <select id="hg" name="list">
+                            <option value="1" selected>программирование</option>
+                            <option value="2">спорт</option>
+                            <option value="3">наука</option>
+                        </select>
+                    </div>
 
-            <label for="label-checkbox">
-                Разрешить коментарии:
-                <input id="label-checkbox" type="checkbox" value="7">
-            </label>
+                    <div class="publication">
+                        <label for="pubon">
+                            Публикация:
+                        </label>
+                        <div id="pubon">
+                            <label for="input-radio1">
+                                <input id="input-radio1" name="pub" type="radio" value="4">
+                                на сайте
+                            </label>
+                            <label for="input-radio2">
+                                <input id="input-radio2" name="pub" type="radio" value="5">
+                                в журнале
+                            </label>
+                            <label for="input-radio3">
+                                <input id="input-radio3" name="pub" type="radio" value="6">
+                                на сайте и в журнале
+                            </label>
+                        </div>
+                    </div>
 
-            <div class="text">
-                <label for="label-textarea">
-                    Текст статьи:
-                </label>
-                <textarea id="label-textarea" name="text" placeholder="Печатать тут."></textarea>
-                <input type="submit" value="Опубликовать">
-            </div>
-        </div>
-    </section>
+                    <div class="label-checkbox">
+                        <label for="lx">
+                            Разрешить коментарии:
+                        </label>
+                        <input id="lx" type="checkbox" value="7">
+                    </div>
+
+                </div>
+
+                <div class="text">
+                    <label for="label-textarea">
+                        Текст статьи:
+                    </label>
+                    <textarea id="label-textarea" name="text" placeholder="Печатать тут."></textarea>
+                    <input id="butt" type="submit" value="Опубликовать">
+                </div>
+            </section>
+        </section>
+    </form>
 </body>
 
 </html>

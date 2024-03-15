@@ -1,45 +1,66 @@
-.container {
+.container1 {
     margin: 0px 10px 0px 10px;
     font-size: 18px;
+}
+.container2 {
+    margin: 0px 0px 0px 4px;
+    font-size: 18px;
     overflow: hidden;
+    width: 100%
 }
-.leveling-blok {
-    width: 100%;
-}
-.leveling-blok * {
-    display: block;
+.title {
+    margin: 10px 0px 10px 0px;
 }
 .leveling-blok *{
-    margin: 2px 0px 2px 0px;
+    margin: 4px 0px 0px 0px;
 }
-#article-title {
-    width: 98%;
+#at, #label-textarea{
+    width: 56%;
     border: solid grey 1px;
-}
-#heading {
-    width: 99%;
-    padding: 1px 2px 1px 2px;
-    border: solid grey 1px;
-}
-#input-radio1, #input-radio2, #input-radio3, #label-checkbox {
-    display: inline-block;
-    vertical-align: text-bottom;
-}
-#label-textarea {
-    width: 98%;
-    border: solid grey 1px;
-}
-br {
-    display: none;
+    margin-top: 1px;
 }
 
-@media screen and (min-width: 768px) {
-    .leveling-blok label {
-        display: inline-block;
-    }
-    #article-title, #heading, #publication {
-        display: inline-block;
-        width: 77%;
-    
-    }
+#hg {
+    width: 56%;
+    padding: 1px 2px 1px 2px;
+    border: solid grey 1px;
+    margin-top: 1px;
+}
+#pubon {
+    width: 76%;
+}
+#pubon, #pubon label {
+    display: inline-block;
+}
+#input-radio1, #input-radio2, 
+#input-radio3, #lx {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 0px;
+}
+.article-title *, .heading *, 
+.publication *, .label-checkbox * {
+    margin: 0px;
+}
+.text * {
+    display: block;
+    margin: 4px 0px 0px 0px;
+    clear: both;
+}
+.article-title, .heading, 
+.publication, .label-checkbox {
+    clear: both; 
+    text-align: right;
+    line-height: 25px;
+}
+.article-title > label, .heading > label, 
+.publication > label, .label-checkbox > label {
+    float: left;
+    padding-right: 15px;
+}
+.leveling-blok {
+    float: left;
+}
+#lx{
+    margin-right: 56%;
 }
