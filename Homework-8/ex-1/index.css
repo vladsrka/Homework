@@ -14,23 +14,19 @@
 .leveling-blok *{
     margin: 4px 0px 0px 0px;
 }
-#at, #label-textarea{
-    width: 56%;
+#at, #label-textarea {
+    width: 98%;
     border: solid grey 1px;
     margin-top: 1px;
 }
-
 #hg {
-    width: 56%;
+    width: 99%;
     padding: 1px 2px 1px 2px;
     border: solid grey 1px;
     margin-top: 1px;
 }
-#pubon {
-    width: 76%;
-}
-#pubon, #pubon label {
-    display: inline-block;
+#pubon label {
+    display: block;
 }
 #input-radio1, #input-radio2, 
 #input-radio3, #lx {
@@ -38,29 +34,44 @@
     vertical-align: middle;
     margin-top: 0px;
 }
-.article-title *, .heading *, 
-.publication *, .label-checkbox * {
-    margin: 0px;
-}
 .text * {
     display: block;
     margin: 4px 0px 0px 0px;
     clear: both;
 }
-.article-title, .heading, 
-.publication, .label-checkbox {
-    clear: both; 
-    text-align: right;
-    line-height: 25px;
+#butt {
+    margin-top: 5px;
 }
-.article-title > label, .heading > label, 
-.publication > label, .label-checkbox > label {
-    float: left;
-    padding-right: 15px;
-}
-.leveling-blok {
-    float: left;
-}
-#lx{
-    margin-right: 56%;
+
+
+@media screen and (min-width: 593px) {
+    #at {
+        width: calc(100% - 221px);
+    }
+    #hg {
+        width: 230px;
+    }
+    #label-textarea {
+        width: 99%;
+    }
+    #pubon, #pubon label {
+        display: inline-block;
+    }
+    .article-title, .heading, 
+    .publication, .label-checkbox {
+        line-height: 26px;
+    }
+    .article-title > label, .heading > label, 
+    .publication > label, .label-checkbox > label {
+        display: inline-block;
+        width: 197px;
+        padding-right: 10px;
+    }
+    .leveling-blok {
+        width: 100%;
+    }
+    .article-title *, .heading *, 
+    .publication *, .label-checkbox * {
+        margin: 0px;
+    }
 }
