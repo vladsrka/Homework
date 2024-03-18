@@ -1,0 +1,23 @@
+.container {
+    margin: 10px 20px 10px 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0px 10px 0px;
+}
+
+.myvideo {
+    width: 600px;
+    height: 650px;
+    overflow: auto;
+}
+
+a {
+    display: block;
+    margin: 10px;
+}
+
+#academeg, #nb, #doug, #jk {
+    margin: 20px;
+}
