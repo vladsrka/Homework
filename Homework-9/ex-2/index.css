@@ -1,0 +1,29 @@
+svg {
+    margin: 10px;
+}
+
+#duck:hover {
+    width: 20% !important;
+}
+#duck:hover #beak {
+    fill: #FF1493;
+}
+#duck:hover #head {
+    fill: greenyellow;
+}
+#duck:hover .bo {
+    fill: greenyellow;
+}
+
+#picture:hover {
+    width: 20% !important;
+}
+#picture:hover #svg_1 {
+    fill: black;
+}
+#picture:hover #svg_5 {
+    fill: greenyellow;
+}
+#picture:hover #svg_7 {
+    fill: yellow;
+}
