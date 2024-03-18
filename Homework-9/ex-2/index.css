@@ -3,7 +3,7 @@ svg {
 }
 
 #duck:hover {
-
+    width: 20% !important;
 }
 #duck:hover #beak {
     fill: #FF1493;
@@ -15,7 +15,9 @@ svg {
     fill: greenyellow;
 }
 
-
+#picture:hover {
+    width: 20% !important;
+}
 #picture:hover #svg_1 {
     fill: black;
 }
