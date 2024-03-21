@@ -1,19 +1,21 @@
 .container {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: start;
+    align-content: flex-start;
 }
 .card img {
-    width: 270px;
+    width: 18.9vw;
 }
 
 .card {
-    display: inline-block;
     border: solid 1px rgb(248, 254, 239);
     background-color: rgb(248, 254, 239);
-    padding: 20px;
-    box-shadow: 0 0 15px rgb(226, 232, 218);
-    margin: 20px;
+    padding: 1.3vw;
+    box-shadow: 0 0 1vw rgb(198, 203, 191);
+    margin: 1.5vw;
 }
 
 /* .card:hover {
