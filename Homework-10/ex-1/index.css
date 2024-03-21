@@ -1,0 +1,36 @@
+.card img {
+    width: 350px;
+}
+
+.card {
+    display: inline-block;
+    border: solid 1px gainsboro;
+    padding: 20px;
+    box-shadow: 0 0 10px gainsboro;
+    margin: 50px;
+}
+
+/* .card:hover {
+    transform: perspective(500px) rotate3d(0, 0, 50, 20deg);
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+} */
+
+/* .card {
+    animation: rotate-left 4s 5 both;
+}
+
+@keyframes rotate-left {
+    from {
+        transform: rotateY(0);
+        transform-origin: left;
+    }
+    to {
+        transform: rotateY(360deg);
+        transform-origin: left;
+    }
+} */
+
+.card:hover {
+    transform: scale(1.2);
+}
