@@ -93,8 +93,15 @@
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.cd3:hover {
-    animation: rotate-left 2s 1 both;
+.cd3 {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.cd3:hover, .cd3 img:hover {
+    border-radius: 50%;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 .cd4:hover {
