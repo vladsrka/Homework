@@ -93,6 +93,7 @@ li:active {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: 5px;
     margin-bottom: 5px;
 }
 .text {
@@ -184,6 +185,7 @@ footer {
         flex-wrap: wrap;
         align-items: center;
         width: 80px;
+        margin-left: 0px;
         margin-bottom: 0px;
     }
     .popular-heroes {text-align: center;}
