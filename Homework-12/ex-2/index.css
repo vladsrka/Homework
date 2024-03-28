@@ -52,10 +52,8 @@ h1 {
 
 
 .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: 1fr 5.88fr;
 }
 
 
@@ -63,7 +61,6 @@ h1 {
     font-size: 15px;
     margin-left: 5px;
     padding: 0;
-    flex: 1 1 0;
 }
 
 h2 {
@@ -82,15 +79,9 @@ li:active {
     
 }
 
-.sec-img {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
 .dimg {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 65px 1fr;
     align-items: center;
     margin-left: 5px;
     margin-bottom: 5px;
@@ -105,7 +96,6 @@ main {
     font-family: Pacifico;
     font-size: 16px;
     margin-right: 5px;
-    flex: 6 1 0;
 }
 
 #lp1::first-letter, 
@@ -115,8 +105,8 @@ main {
 }
 
 .paragraph {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 12.7vw 1fr;
     padding: 10px;
     min-height: auto;
     margin: 30px;
@@ -125,7 +115,6 @@ main {
 
 .imgp {
     width: 12vw;
-    margin-right: 10px;
 }
 
 .p1 {
@@ -156,11 +145,11 @@ footer {
     h1 {font-size: 32px;}
     h2, .paragraph-head {font-size: 18px;}
     .content {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
     .sidebar {
-        order: 2;
-        flex: 1 1 0;
+        display: grid;
+        grid-row: 2/bottom;
         text-align: center;
     }
     .sidebar a {font-size: 13px;}
@@ -172,30 +161,25 @@ footer {
         margin: 0;
         display: inline-block;
     }
+    .popular-heroes {text-align: center;}
     .sec-img {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 66px 66px 66px 66px 66px;
+        align-items: start;
+        column-gap: 14px;
+        place-content: center;
     }
     .dimg {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        width: 80px;
+        grid-template-columns: 66px;
+        align-items: start;
         margin-left: 0px;
         margin-bottom: 0px;
     }
-    .popular-heroes {text-align: center;}
     .text {
         margin: 0;
     }
-    main {
-        order: 1;
-        flex: 1 1 0;
-    }
     .paragraph {
+        grid-template-columns: 13.3vw 1fr;
         margin: 10px;
     }
     #lp1, #lp2, #lp3 {
@@ -221,7 +205,7 @@ footer {
         padding-left: 20px;
     }
     .paragraph {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
     .imgp {
         min-width: 90px;
@@ -231,5 +215,32 @@ footer {
     }
     .paragraph {
         margin: 10px;
+    }
+  }
+  
+  
+  /* Mobil */
+  @media screen and (max-width: 405px) {
+    .sec-img {
+        grid-template-columns: 66px 66px 66px;
+        grid-template-rows: 1fr 1fr;
+    }
+    .d, .e {
+        grid-row: 2;
+    }
+  }
+
+  /* Mobil */
+  @media screen and (max-width: 244px) {
+    .sec-img {
+        grid-template-columns: 66px 66px;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .d {
+        grid-column: 2;
+        grid-row: 2;
+    } 
+    .e {
+        grid-row: 3;
     }
   }
