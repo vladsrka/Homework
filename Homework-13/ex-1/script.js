@@ -138,6 +138,38 @@
     // }
 
 
+        // Задание из учебника if
+
+// let name1 = prompt('Введите Фамилию');
+// let surname1 = prompt('Введите Имя');
+// let surname2 = prompt('Введите Отчество');
+// let nss2 = `${name1} ${surname1} ${surname2}`;
+// let age = prompt('Введите возраст (Сколько полных лет?):');
+// let agedays = +age*365;
+// let age5 = +age + 5;
+// let pension;
+// let gender = confirm('Ваш пол - мужской?');
+// if (gender == true && +age >= 63) {
+//     gender = 'мужской';
+//     pension = 'да';
+// }
+// else if (gender == true && +age < 63) {
+//     gender = 'мужской';
+//     pension = 'нет';
+// }
+// else if (gender == false && +age >= 58) {
+//     gender = 'женский';
+//     pension = 'да';
+// }
+// else {
+//     gender = 'женский';
+//     pension = 'нет';
+// }
+// alert(` ваше ФИО: ${nss2}\n ваш возраст в годах: ${age}\n ваш возраст в днях: ${agedays}\n через 5 лет вам будет: ${age5}\n ваш пол: ${gender}\n вы на пенсии: ${pension}`);
+
+
+        // Задание из учебника a?b:c
+
 let name1 = prompt('Введите Фамилию');
 let surname1 = prompt('Введите Имя');
 let surname2 = prompt('Введите Отчество');
@@ -145,22 +177,9 @@ let nss2 = `${name1} ${surname1} ${surname2}`;
 let age = prompt('Введите возраст (Сколько полных лет?):');
 let agedays = +age*365;
 let age5 = +age + 5;
-let pension;
 let gender = confirm('Ваш пол - мужской?');
-if (gender == true && +age >= 63) {
-    gender = 'мужской';
-    pension = 'да';
-}
-else if (gender == true && +age < 63) {
-    gender = 'мужской';
-    pension = 'нет';
-}
-else if (gender == false && +age >= 58) {
-    gender = 'женский';
-    pension = 'да';
-}
-else {
-    gender = 'женский';
-    pension = 'нет';
-}
-alert(` ваше ФИО: ${nss2}\n ваш возраст в годах: ${age}\n ваш возраст в днях: ${agedays}\n через 5 лет вам будет: ${age5}\n ваш пол: ${gender}\n вы на пенсии: ${pension}`);
+let gender1 = (gender == true) ? 'мужской' : 'женский';
+let pension =   (gender == true && +age >= 63) ? 'да' : 
+                (gender == true && +age < 63) ? 'нет' :
+                (gender == false && +age >= 58) ? 'да' : 'нет';
+alert(` ваше ФИО: ${nss2}\n ваш возраст в годах: ${age}\n ваш возраст в днях: ${agedays}\n через 5 лет вам будет: ${age5}\n ваш пол: ${gender1}\n вы на пенсии: ${pension}`);
