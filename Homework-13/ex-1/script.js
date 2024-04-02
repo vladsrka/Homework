@@ -35,7 +35,7 @@
     // let number4 = parseFloat(prompt('Введите второе дробное число.'));
     // let result1 = number1 + number2;
     // let result2 = (number3 + number4) * 5;
-    // alert(`Сумма целых чисел: ${result1}\nСумма дробных чисел умноженных на 5: ${result2.toFixed(3)}`);
+    // alert(`Сумма целых чисел: ${result1.toFixed(3)}\nСумма дробных чисел умноженных на 5: ${result2.toFixed(3)}`);
 
 
         // 4
@@ -77,7 +77,7 @@
 // Добавить обработку на числа - Вывести "Вы ввели не число"
 // Добавить обработку отрицательных значений и 0 - Вывести "Нужно ввести положительное число"
 
-    // let number = prompt('Ведите ');
+    // let number = prompt('Ведите число');
     // if (+number == null || +number == '') {
     //     alert("Вы ничего не ввели!");
     // }
@@ -90,3 +90,77 @@
     // else {
     //     alert("Все отлично!");
     // }
+
+
+        // Homework
+// Попросить пользователя ввести по очереди 3 числа. Вернуть разность удвоенной суммы первого и третьего чисел и утроенного второго числа.
+
+    // let number1 = parseFloat(prompt('Введите первое число.'));
+    // let number2 = parseFloat(prompt('Введите второе число.'));
+    // let number3 = parseFloat(prompt('Введите третье число.'));
+    // let result = 2 * (number1 + number3) / (3 * number2);
+    // alert(`Разность удвоенной суммы первого и третьего чисел и утроенного второго числа: ${result.toFixed(3)}`);
+
+
+// Попросить пользователя ввести по очереди 2 числа. Определить четность этих чисел и вывести на экран результат в виде 
+// "Оба числа являются четными - true"  или "Оба числа являются четными - false" 
+
+    // let number1 = parseFloat(prompt('Введите первое число.'));
+    // let number2 = parseFloat(prompt('Введите второе число.'));
+    // if (number1 % 2 == 0 && number2 % 2 == 0) {
+    //     alert('Оба числа являются четными.');
+    // }
+    // else if (number1 % 2 != 0 && number2 % 2 != 0) {
+    //     alert('Оба числа являются нечетными.');
+    // }
+    // else {
+    //     alert('Одно из чисел четное.')
+    // }
+
+
+// Попросить пользователя ввести по очереди 2 числа. Если они четные вернуть сумму, если нечетные - произведение, иначе вернуть нечетное число
+
+    // let number1 = parseFloat(prompt('Введите первое число.'));
+    // let number2 = parseFloat(prompt('Введите второе число.'));
+    // let sum = number1 + number2;
+    // let proiz = number1 * number2;
+    // if (number1 % 2 == 0 && number2 % 2 == 0) {
+    //     alert(`Сумма чисел: ${sum}`);
+    // }
+    // else if (number1 % 2 != 0 && number2 % 2 != 0) {
+    //     alert(`Произведение чисел: ${proiz}`);
+    // }
+    // else if (number1 % 2 != 0 && number2 % 2 == 0){
+    //     alert(`Нечетное число: ${number1}`);
+    // }
+    // else {
+    //     alert(`Нечетное число: ${number2}`);
+    // }
+
+
+let name1 = prompt('Введите Фамилию');
+let surname1 = prompt('Введите Имя');
+let surname2 = prompt('Введите Отчество');
+let nss2 = `${name1} ${surname1} ${surname2}`;
+let age = prompt('Введите возраст (Сколько полных лет?):');
+let agedays = +age*365;
+let age5 = +age + 5;
+let pension;
+let gender = confirm('Ваш пол - мужской?');
+if (gender == true && +age >= 63) {
+    gender = 'мужской';
+    pension = 'да';
+}
+else if (gender == true && +age < 63) {
+    gender = 'мужской';
+    pension = 'нет';
+}
+else if (gender == false && +age >= 58) {
+    gender = 'женский';
+    pension = 'да';
+}
+else {
+    gender = 'женский';
+    pension = 'нет';
+}
+alert(` ваше ФИО: ${nss2}\n ваш возраст в годах: ${age}\n ваш возраст в днях: ${agedays}\n через 5 лет вам будет: ${age5}\n ваш пол: ${gender}\n вы на пенсии: ${pension}`);
