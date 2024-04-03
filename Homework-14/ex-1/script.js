@@ -109,11 +109,11 @@ do {
 let checkpref;
 let pref;
 do {
-    checkpref = prompt(`Предпочитаете современную литературу?\nДа/Нет`);
+    checkpref = prompt(`Предпочитаете современную литературу?\nда/нет`);
     if (checkpref == "") {
         alert("Нужно ввести ответ!");
-    } else if (checkpref !== 'Да' && checkpref !== 'Нет') {
-        alert("Нужно ввести Да либо Нет!");
+    } else if (checkpref !== 'да' && checkpref !== 'нет') {
+        alert("Нужно ввести да либо нет!");
     } else {
         pref = checkpref;
     }
@@ -122,25 +122,25 @@ do {
 let checkauthor;
 let author;
 do {
-    checkauthor = prompt(`Хотели бы книгу русского автора?\nДа/Нет`);
+    checkauthor = prompt(`Хотели бы книгу русского автора?\nда/нет`);
     if (checkauthor == "") {
         alert("Нужно ввести ответ!");
-    } else if (checkauthor !== 'Да' && checkauthor !== 'Нет') {
-        alert("Нужно ввести Да либо Нет!");
+    } else if (checkauthor !== 'да' && checkauthor !== 'нет') {
+        alert("Нужно ввести да либо нет!");
     } else {
         author = checkauthor;
     }
 } while (author !== checkauthor);
 
-if (+number === 1 && pref === 'Нет' && author === 'Да') {
+if (+number === 1 && pref === 'нет' && author === 'да') {
     alert(`Предлагаем вам почитать - “Война и мир”`);
-} else if (+number === 3 && pref === 'Да' && author === 'Да') {
+} else if (+number === 3 && pref === 'да' && author === 'да') {
     alert(`Предлагаем вам почитать - “Ночной дозор”`);
-} else if (+number === 3 && pref === 'Да' && author === 'Нет') {
+} else if (+number === 3 && pref === 'да' && author === 'нет') {
     alert(`Предлагаем вам почитать - “Гарри Поттер”`);
-} else if (+number === 2 && pref === 'Нет' && author === 'Нет') {
+} else if (+number === 2 && pref === 'нет' && author === 'нет') {
     alert(`Предлагаем вам почитать - “Шерлок Холмс”`);
-} else if (+number === 2 && pref === 'Да' && author === 'Нет') {
+} else if (+number === 2 && pref === 'да' && author === 'нет') {
     alert(`Предлагаем вам почитать - “Девушка в поезде”`);
 } else {
     alert(`К сожалению, не смогли подобрать вам книгу`);
