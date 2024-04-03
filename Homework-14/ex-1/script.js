@@ -90,8 +90,9 @@
 
 // Homework ex_2
 
-let number = prompt(`Какой жанр предпочитаете?\n1 - Роман, 2 - Детектив, 3 - Фентези`);
+let number;
 do {
+    number = prompt(`Какой жанр предпочитаете?\n1 - Роман, 2 - Детектив, 3 - Фентези`);
     if (+number == null || +number == "" || +number > 3) {
         alert("Нужно ввести число от 1 до 3!");
     } else if (isNaN(number)) {
@@ -105,14 +106,42 @@ do {
     }
 } while (number !== parseInt(number));
 
-let check = prompt(`Предпочитаете современную литературу?\nДа/Нет`);
+let checkpref;
 let pref;
 do {
-    if (check == "") {
+    checkpref = prompt(`Предпочитаете современную литературу?\nДа/Нет`);
+    if (checkpref == "") {
         alert("Нужно ввести ответ!");
-    } else if (check !== 'Да' && check !== 'Нет') {
+    } else if (checkpref !== 'Да' && checkpref !== 'Нет') {
         alert("Нужно ввести Да либо Нет!");
     } else {
-        pref = check;
+        pref = checkpref;
     }
-} while (pref !== check);
+} while (pref !== checkpref);
+
+let checkauthor;
+let author;
+do {
+    checkauthor = prompt(`Хотели бы книгу русского автора?\nДа/Нет`);
+    if (checkauthor == "") {
+        alert("Нужно ввести ответ!");
+    } else if (checkauthor !== 'Да' && checkauthor !== 'Нет') {
+        alert("Нужно ввести Да либо Нет!");
+    } else {
+        author = checkauthor;
+    }
+} while (author !== checkauthor);
+
+if (+number === 1 && pref === 'Нет' && author === 'Да') {
+    alert(`Предлагаем вам почитать - “Война и мир”`);
+} else if (+number === 3 && pref === 'Да' && author === 'Да') {
+    alert(`Предлагаем вам почитать - “Ночной дозор”`);
+} else if (+number === 3 && pref === 'Да' && author === 'Нет') {
+    alert(`Предлагаем вам почитать - “Гарри Поттер”`);
+} else if (+number === 2 && pref === 'Нет' && author === 'Нет') {
+    alert(`Предлагаем вам почитать - “Шерлок Холмс”`);
+} else if (+number === 2 && pref === 'Да' && author === 'Нет') {
+    alert(`Предлагаем вам почитать - “Девушка в поезде”`);
+} else {
+    alert(`К сожалению, не смогли подобрать вам книгу`);
+}
