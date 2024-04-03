@@ -106,7 +106,7 @@ do {
 } while (number !== parseInt(number));
 
 let check = prompt(`Предпочитаете современную литературу?\nДа/Нет`);
-let = pref;
+let pref;
 do {
     if (check == "") {
         alert("Нужно ввести ответ!");
