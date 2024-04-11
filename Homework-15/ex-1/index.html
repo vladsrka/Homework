@@ -31,7 +31,73 @@
 
         // Задание 2
 
-        
+        let size1;
+        do {
+            size1 = prompt("Введите целое число M ( M размер матрицы MxN)");
+            if (+size1 == null || +size1 == "") {
+                alert("Вы ничего не ввели!");
+            } else if (isNaN(size1)) {
+                alert("Вы ввели не число!");
+            } else if (parseFloat(size1) <= 0) {
+                alert("Нужно ввести положительное число!");
+            } else if (!Number.isInteger(+size1)) {
+                alert("Нужно ввести целое число!");
+            } else {
+                size1 = parseInt(size1);
+            }
+        } while (size1 !== parseInt(size1));
+
+        let size2;
+        do {
+            size2 = prompt("Введите целое число N ( N размер матрицы MxN)");
+            if (+size2 == null || +size2 == "") {
+                alert("Вы ничего не ввели!");
+            } else if (isNaN(size2)) {
+                alert("Вы ввели не число!");
+            } else if (parseFloat(size2) <= 0) {
+                alert("Нужно ввести положительное число!");
+            } else if (!Number.isInteger(+size2)) {
+                alert("Нужно ввести целое число!");
+            } else {
+                size2 = parseInt(size2);
+            }
+        } while (size2 !== parseInt(size2));
+
+        let arr1 = [];
+        let value1 = 0;
+        let str1, stlb1;
+        for (let i = 0; i < size1; i++) {
+            arr1[i] = [];
+            for (let j = 0; j < size2; j++) {
+                value1++;
+                arr1[i].push(value1);
+            }
+        }
+        console.log(arr1);
+
+        let arr2 = [];
+        let value2 = 0;
+        let str2, stlb2;
+        for (let k = 0; k < size1; k++) {
+            arr2[k] = [];
+            for (let l = 0; l < size2; l++) {
+                value2--;
+                arr2[k].push(value2);
+            }
+        }
+        console.log(arr2);
+
+        let arr3 = [];
+        let value3 = 0;
+        let str3, stlb3;
+        for (let m = 0; m < size1; m++) {
+            arr3[m] = [];
+            for (let n = 0; n < size2; n++) {
+                value3 = value3 + 2;
+                arr3[m].push(value3);
+            }
+        }
+        console.log(arr3);
 
     </script>
 </body>
