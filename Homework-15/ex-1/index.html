@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icon.png" type="image/png" />
+    <link rel="stylesheet" href="./normaliz.css" type="text/css">
+    <link rel="stylesheet" href="./index.css" type="text/css" />
+    <title>Homework-15_ex1</title>
+</head>
+
+<body>
+
+
+    <!-- Задание 1 -->
+
+    <!-- <script>
+        "use strict";
+        
+        let array = [];
+        let sum = 0;
+        for (let i = 0; i < 10; i++) {
+            let num = i + 1;
+            let data = prompt(`Введите данные массива: ${num}`);
+            let check = parseFloat(data);
+            isNaN(check) ? sum : sum += check;
+            array.push(data);
+        }
+        console.log(array);
+        console.log(`Сумма элементов-чисел: ${sum}`);
+    </script> -->
+
+
+
+    <!-- Задание 2 -->
+
+    <button name="generate_array(1)" style="margin: 5px" onclick="Array1();">Массив (1, 2, 3, ...)</button>
+    <br>
+    <button name="generate_array(2)" style="margin: 5px" onclick="Array2();">Массив (-1, -2, -3, ...)</button>
+    <br>
+    <button name="generate_array(3)" style="margin: 5px" onclick="Array3();">Массив (2, 4, 6, ...)</button>
+
+    <script>
+        "use strict";
+
+        function InputSize() {
+            let size;
+            do {
+                size = prompt("Введите целое число (размер матрицы MxN)");
+                if (+size == null || +size == "") {
+                    alert("Вы ничего не ввели!");
+                } else if (isNaN(size)) {
+                    alert("Вы ввели не число!");
+                } else if (parseFloat(size) <= 0) {
+                    alert("Нужно ввести положительное число!");
+                } else if (!Number.isInteger(+size)) {
+                    alert("Нужно ввести целое число!");
+                } else {
+                    return size = parseInt(size);
+                }
+            } while (size !== parseInt(size));
+        }
+
+        function GenerateArray1(lines, columns) {
+            let arr1 = [];
+            let value1 = 0;
+            for (let i = 0; i < lines; i++) {
+                arr1[i] = [];
+                for (let j = 0; j < columns; j++) {
+                    value1++;
+                    arr1[i].push(value1);
+                }
+            }
+            console.log(arr1);
+        }
+
+        function GenerateArray2(lines, columns) {
+            let arr2 = [];
+            let value2 = 0;
+            for (let k = 0; k < lines; k++) {
+                arr2[k] = [];
+                for (let l = 0; l < columns; l++) {
+                    value2--;
+                    arr2[k].push(value2);
+                }
+            }
+            console.log(arr2);
+        }
+
+        function GenerateArray3(lines, columns) {
+            let arr3 = [];
+            let value3 = 0;
+            for (let m = 0; m < lines; m++) {
+                arr3[m] = [];
+                for (let n = 0; n < columns; n++) {
+                    value3 = value3 + 2;
+                    arr3[m].push(value3);
+                }
+            }
+            console.log(arr3);
+        }
+
+        function Array1() {
+            GenerateArray1(InputSize(), InputSize());
+        }
+        function Array2() {
+            GenerateArray2(InputSize(), InputSize());
+        }
+        function Array3() {
+            GenerateArray3(InputSize(), InputSize());
+        }
+
+    </script>
+
+
+    <script src="script.js?v1"></script>
+</body>
+
+</html>
