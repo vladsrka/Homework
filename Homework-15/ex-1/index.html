@@ -45,39 +45,22 @@
     <script>
         "use strict";
 
-        function InputSize1() {
-            let size1;
+        function InputSize() {
+            let size;
             do {
-                size1 = prompt("Введите целое число M ( M размер матрицы MxN)");
-                if (+size1 == null || +size1 == "") {
+                size = prompt("Введите целое число (размер матрицы MxN)");
+                if (+size == null || +size == "") {
                     alert("Вы ничего не ввели!");
-                } else if (isNaN(size1)) {
+                } else if (isNaN(size)) {
                     alert("Вы ввели не число!");
-                } else if (parseFloat(size1) <= 0) {
+                } else if (parseFloat(size) <= 0) {
                     alert("Нужно ввести положительное число!");
-                } else if (!Number.isInteger(+size1)) {
+                } else if (!Number.isInteger(+size)) {
                     alert("Нужно ввести целое число!");
                 } else {
-                    return size1 = parseInt(size1);
+                    return size = parseInt(size);
                 }
-            } while (size1 !== parseInt(size1));
-        }
-        function InputSize2() {
-            let size2;
-            do {
-                size2 = prompt("Введите целое число N ( N размер матрицы MxN)");
-                if (+size2 == null || +size2 == "") {
-                    alert("Вы ничего не ввели!");
-                } else if (isNaN(size2)) {
-                    alert("Вы ввели не число!");
-                } else if (parseFloat(size2) <= 0) {
-                    alert("Нужно ввести положительное число!");
-                } else if (!Number.isInteger(+size2)) {
-                    alert("Нужно ввести целое число!");
-                } else {
-                    return size2 = parseInt(size2);
-                }
-            } while (size2 !== parseInt(size2));
+            } while (size !== parseInt(size));
         }
 
         function GenerateArray1(lines, columns) {
@@ -120,15 +103,14 @@
         }
 
         function Array1() {
-            GenerateArray1(InputSize1(), InputSize2());
+            GenerateArray1(InputSize(), InputSize());
         }
         function Array2() {
-            GenerateArray2(InputSize1(), InputSize2());
+            GenerateArray2(InputSize(), InputSize());
         }
         function Array3() {
-            GenerateArray3(InputSize1(), InputSize2());
+            GenerateArray3(InputSize(), InputSize());
         }
-
 
     </script>
 
