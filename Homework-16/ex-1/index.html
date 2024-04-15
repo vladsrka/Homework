@@ -15,7 +15,7 @@
     <button onclick="productList()">Показать список товаров</button>
     <button onclick="available()">Показать цены на все товаты</button>
     <button onclick="costOfGoods()">Узнать стоимость интересующего товара</button>
-    <button onclick="()">Узнать возможное кол-во приобретаемого товара</button>
+    <button onclick="possForSale()">Узнать возможное кол-во приобретаемого товара</button>
 
     <script>
         "use strict";
@@ -75,6 +75,44 @@
             } else {
                 console.log(`Товара ${pushProduct} нет. Пожалуйста, ознакомтесь со списком товаров.`);
             }
+        }
+
+        function check() {
+            let num;
+            do {
+                num = prompt("Введите сумму которую вы готовы потратить:");
+                if (+num == null || +num == "") {
+                    alert("Вы ничего не ввели!");
+                } else if (isNaN(num)) {
+                    alert("Вы ввели не число!");
+                } else if (parseFloat(num) <= 0) {
+                    alert("Нужно ввести положительное число!");
+                } else {
+                    return num = parseFloat(num);
+                }
+            } while (num !== parseFloat(num));
+        }
+
+        function possForSale() {
+            let buyBudget = check();
+            let str = ``;
+            let i = 0;
+            for (let product of warehouse) {
+                let name = product.name;
+                let price = product.price;
+                let count = product.count;
+                let number = parseFloat((buyBudget / price).toFixed(2));
+                i++;
+                if (number < count) {
+                    str += `(${number} кг ${name}) `;
+                } else {
+                    str += `(${count} кг ${name}) `;
+                }
+                if (i < 5) {
+                    str += `или `;
+                }
+            }
+            console.log(str);
         }
 
     </script>
