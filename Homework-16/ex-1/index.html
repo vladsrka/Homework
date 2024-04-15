@@ -11,6 +11,12 @@
 </head>
 
 <body>
+
+    <button onclick="productList()">Показать список товаров</button>
+    <button onclick="available()">Показать цены на все товаты</button>
+    <button onclick="costOfGoods()">Узнать стоимость интересующего товара</button>
+    <button onclick="()">Узнать возможное кол-во приобретаемого товара</button>
+
     <script>
         "use strict";
 
@@ -41,6 +47,35 @@
                 count: 5,
             },
         ];
+
+        function productList() {
+            console.log(`Список товаров:`);
+            for (let product of warehouse) {
+                console.log(`${product.name}`);
+            }
+        }
+
+        function available() {
+            for (let product of warehouse) {
+                console.log(`${product.name}: ${product.price}р за кг.`);
+            }
+        }
+
+        function costOfGoods() {
+            let pushProduct = prompt('Стоимость какого товара вас интересует?');
+            let price = 0;
+            for (let product of warehouse) {
+                if (pushProduct == product.name) {
+                    price = product.price;
+                }
+            }
+
+            if (price != 0) {
+                console.log(`Стоимость товара '${pushProduct}' - ${price}р за кг`);
+            } else {
+                console.log(`Товара ${pushProduct} нет. Пожалуйста, ознакомтесь со списком товаров.`);
+            }
+        }
 
     </script>
     <script src="script.js?v=1"></script>
