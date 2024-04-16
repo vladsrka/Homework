@@ -103,10 +103,12 @@
                 let count = product.count;
                 let number = parseFloat((buyBudget / price).toFixed(2));
                 i++;
-                if (number < count) {
-                    str += `(${number} кг ${name}) `;
-                } else {
+                if (number < count && number > 1) {
+                    str += `(${parseInt(number)} кг ${name}) `;
+                } else if (number > count && number > 1) {
                     str += `(${count} кг ${name}) `;
+                } else {
+                    continue;
                 }
                 if (i < 5) {
                     str += `или `;
