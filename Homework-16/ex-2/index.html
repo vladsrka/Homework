@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icon.png" type="image/png" />
+    <link rel="stylesheet" href="./normaliz.css" type="text/css">
+    <link rel="stylesheet" href="./index.css" type="text/css" />
+    <title>Homework-16_ex2</title>
+</head>
+
+<body>
+
+    <button onclick="result()">Создать объект</button>
+
+    <script>
+        "use strict";
+
+        function getName() {
+            let name;
+            do {
+                name = prompt('Введите имя пользователя');
+                if (name == '' || name == null)
+                    alert('Вы ничего не ввели');
+            } while (name == '' || name == null)
+            return name;
+        }
+
+        function getData(lessons) {
+            let size;
+            do {
+                size = lessons ? getMark(lessons) : getLessons();
+                if (size == '' || size == null) {
+                    alert('Вы ничего не ввели');
+                } else if (isNaN(size)) {
+                    alert('Вы ввели не число');
+                } else if (parseInt(size) < 1) {
+                    alert('Нужно ввести положительное число');
+                } else if (parseInt(size) != parseFloat(size)) {
+                    alert('Вы ввели не целое число');
+                } else {
+                    size = parseInt(size);
+                }
+            } while (size != parseInt(size));
+            return size;
+        }
+
+        function getMark(lessons) {
+            return prompt('Введите оценку за занятие' + lessons)
+        }
+
+        function getLessons() {
+            return prompt('Введите количество занятий');
+        }
+
+        function createUserObject(name, lessonsSize) {
+            let lessonObject = {};
+            for (let i = 1; i <= lessonsSize; i++) {
+                lessonObject[i] = getData(i);
+            }
+            let user = {
+                name: name,
+                lessons: lessonObject
+            };
+            return user;
+        }
+
+        function calcScore(lesson) {
+            let average = 0;
+            let rating = 0;
+            for (let key in lesson) {
+                average += lesson[key];
+                rating++;
+            }
+            average /= rating;
+            let aver = parseFloat(average.toFixed(2));
+            console.log(`Средний балл: ${aver}`);
+            return aver;
+        }
+
+        function nextCourse(average) {
+            let misPoints = 7.5 - average;
+            (average >= 7.5) ?
+                console.log(`${average} Баллов достаточно для прохождения на следующий курс`) :
+                console.log(`${average} Баллов недостаточно для прохождения на следующий курс.\nВам не хватает ${misPoints}`);
+        }
+
+        function result() {
+            let name = getName();
+            let lessons = getData();
+            let user = createUserObject(name, lessons);
+            console.log(user);
+            let average = calcScore(user['lessons']);
+            let points = nextCourse(average);
+        }
+
+    </script>
+    <script src="script.js?v=1"></script>
+</body>
+
+</html>
